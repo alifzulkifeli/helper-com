@@ -14,7 +14,7 @@ export default function Home({ data }) {
 }
 
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const num = Math.floor(Math.random() * 2);
   const val = num ? "Marketing" : "Coding"
 
